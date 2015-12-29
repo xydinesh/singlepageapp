@@ -1,0 +1,18 @@
+{
+  "name": "singlepage",
+  "description": "Create singlepage app for introducing my idea about single page app",
+  "dependencies": {
+    "autoprefixer-stylus": "0.8.x",
+    "axis": "0.5.x",
+    "axis-css": "^0.1.8",
+    "coffee-script": "^1.0.0",
+    "css-pipeline": "0.3.x",
+    "fullpage.js": "^2.7.6",
+    "jade": "^1.0.0",
+    "js-pipeline": "0.2.x",
+    "jstransformer-marked": "^1.0.0",
+    "marked": "0.3.x",
+    "rupture": "0.6.x",
+    "stylus": "0.52.x"
+  }
+}
