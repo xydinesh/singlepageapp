@@ -8,12 +8,13 @@ html
     meta(name='author', content= "author of the site")
     //- uncomment if your site is responsive!
     //- meta(name="viewport" content="width=device-width, initial-scale=1")
-    title= _path
-    != css()
+    title="Single Page Web Application"
+    link(rel="stylesheet" href="css/fullPage.css")
+    link(rel="stylesheet" href="css/application.css")
   body
     block content
 
     script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js")
-    != js()
+    script(src="js/jquery.fullPage.js")
     script(type="text/javascript").
-      $(document).ready(function(){$('#fullpage').fullpage();});
+      $(document).ready(function(){$('#fullpage').fullpage({navigation: true, continuousVertical: true});});

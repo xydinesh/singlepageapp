@@ -1,13 +1,18 @@
 extends layout
 
 block content
-  h3 Welcome to single page website
-  div(id="fullpage")
-    div.section Some section one
-    div.section Some section two
-    div.section Some section three
-      div.slide Slide 1
-      div.slide Slide 2
-      div.slide Slide 3
-      div.slide Slide 4
-    div.section Some section four
+  #fullpage
+    .section#landingsection
+      #main
+        h1#main Single Page Applications
+        h3#main Let us help you create and host single page web application most efficient and cost effective way
+        // hr
+    .section#pricingsection
+      #pricing
+        p our pricing model
+    .section#mailsection
+      #mail
+        include mailchimp.jade
+    .section#subscribesection
+      #subscribe
+        include paypal.jade
