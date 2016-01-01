@@ -6,13 +6,37 @@ block content
       #main
         h1#main Single Page Applications
         h3#main Let us help you create and host single page web application most efficient and cost effective way
-        // hr
     .section#pricingsection
       #pricing
-        p our pricing model
+        .create.information
+          h3 Create
+          h1 $200 one time
+          ul
+            li We create single page app for you
+            li 24 x 7 email support
+            li We get your feedback during development
+            li First two weeks money back gurantee, no questions asked
+        .host.information
+          h3 Host
+          h1 $10 <span> per month </span>
+          ul
+            li We host your single page app
+            li We help you to setup custom domain
+            li 24 x 7 email support
+            li Real person to talk if you have issues with your website
+            li First two weeks money back gurantee, no questions asked
     .section#mailsection
       #mail
         include mailchimp.jade
     .section#subscribesection
       #subscribe
-        include paypal.jade
+        .create.information
+          h3 Create
+          h1 $200 <span> one time </span>
+          include paypal_create.jade
+        .host.information
+          h3 Host
+          h1 $10 <span> per month </span>
+          include paypal_host.jade
+  include googleanalytics.jade
+  include zopim.jade
