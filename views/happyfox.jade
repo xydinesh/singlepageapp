@@ -1,0 +1,15 @@
+script.
+    window.HFCHAT_CONFIG = {
+      EMBED_TOKEN: "527e1fb0-b1c1-11e5-8c58-67a40465a54d",
+      ACCESS_TOKEN: "fdef78f23b094ed9a3c1037b2b3bf193",
+      HOST_URL: "https://happyfoxchat.com",
+      ASSETS_URL: "https://d1l7z5ofrj6ab8.cloudfront.net/visitor"
+      };
+      (function() {
+      var scriptTag = document.createElement('script');
+      scriptTag.type = 'text/javascript';
+      scriptTag.async = true;
+      scriptTag.src = window.HFCHAT_CONFIG.ASSETS_URL + '/js/widget-loader.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(scriptTag, s);
+      })()
