@@ -14,9 +14,19 @@ html
     link(href='https://fonts.googleapis.com/css?family=Paytone+One' rel='stylesheet' type='text/css')
     link(href='https://fonts.googleapis.com/css?family=Didact+Gothic' rel='stylesheet' type='text/css')
   body
+    ul#menu
+      li(data-menuanchor="introduction") <a href="#introduction">Introduction</a>
+      li(data-menuanchor="pricing") <a href="#pricing">Pricing</a>
+      li(data-menuanchor="mailing_list") <a href="#mailing_list">Mailing list</a>
+      li(data-menuanchor="subscription") <a href="#subscription">Subscription</a>
+      li(data-menuanchor="contact") <a href="#contact">Contact</a>
     block content
 
     script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js")
     script(src="js/jquery.fullPage.js")
     script(type="text/javascript").
-      $(document).ready(function(){$('#fullpage').fullpage({navigation: true, continuousVertical: true});});
+      $(document).ready(function(){$('#fullpage').fullpage({navigation: true, continuousVertical: true,
+      anchors:['introduction', 'pricing', 'mailing_list', 'subscription', 'contact'],
+      sectionsColor : ['#ccc', '#fff', '', '', '#080C0D'],
+      menu: '#menu'
+      });});

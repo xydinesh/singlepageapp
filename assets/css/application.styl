@@ -40,6 +40,62 @@
   margin-right: auto;
   text-align: left;
 
+// Menu
+#menu
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 40px;
+  z-index: 70;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  margin-left: auto
+
+#menu li
+  display:inline-block;
+  margin: 10px;
+  //color: #000;
+  //background:#fff;
+  //background: rgba(255,255,255, 0.5);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  font-family: 'Didact Gothic', sans-serif;
+  font-size: 1em
+  background: transparent
+  color: white
+
+#menu li.active,
+#menu li.active:hover
+  background:#666;
+  background: rgba(0,0,0, 0.5);
+  color: #fff;
+
+#menu li a
+  text-decoration:none;
+  //color: #000;
+  color: white
+
+
+#menu li.active a:hover
+  //color: #000;
+  color: white
+
+#menu li:hover
+  background: rgba(255,255,255, 0.8);
+
+#menu li a,
+#menu li.active a
+  padding: 9px 18px;
+  display:block;
+
+#menu li.active a
+  //color: #fff;
+  color: white
+
+#menu ul
+  list-style: outside none none
+
 // Pricing styles
 #pricing
   margin-left: 15%
@@ -122,6 +178,17 @@ input#mce-EMAIL
   font-family: 'Didact Gothic', sans-serif
   width: 90%
   overflow: hidden
+  color: white
+
+// Contact
+
+#contact
+  font-family: 'Didact Gothic', sans-serif;
+  font-size: 2em
+  color: white
+
+#contact a
+  text-decoration: none
   color: white
 
 // background images
